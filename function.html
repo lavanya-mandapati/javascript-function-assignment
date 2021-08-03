@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Passing function as parameter to other function
+</title>
+</head>
+<body style="text-align:center;">
+<h1 style="color:red;">
+Function Assignment
+<p> 
+            Passing function as arguments. 
+        </p>             
+          
+        <button onclick = "fun_outer('lavanya',fun_inner)"> 
+            Click Here 
+        </button>         
+        <script> 
+            function fun_inner(value){
+               return 'hello '+value;;
+        }    
+        function fun_outer(a,func)
+        {
+        	alert(func(a));
+        }     
+        </script> 
+    </body> 
+</html>             
